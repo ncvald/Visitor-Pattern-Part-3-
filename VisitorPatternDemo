@@ -1,0 +1,20 @@
+package com.visitorpattern;
+
+public class VisitorPatternDemo {
+    public static void main(String[] args) {
+        CarVariable myCar = new CarVariable();
+        myCar.seats = 2;
+        myCar.accept(new CarVisitor());
+
+        TruckVariable myTruck = new TruckVariable();
+        myTruck.towPackage = true;
+        myTruck.accept(new TruckVisitor());
+
+        MonsterTruckVariable myMonsterTruck = new MonsterTruckVariable();
+        myMonsterTruck.looksLikeBadge = true;
+        myMonsterTruck.accept(new MonsterTruckVisitor());
+
+        // Additional tests
+        myCar.accept(new MonsterTruckVisitor());
+    }
+}
