@@ -1,0 +1,8 @@
+package com.visitorpattern;
+
+public class MonsterTruckVariable {
+    public boolean looksLikeBadge;
+    public void accept(MonsterTruckVisitor monsterTruckVisitor) {
+        monsterTruckVisitor.visit(this);
+    }
+}
