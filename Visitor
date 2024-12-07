@@ -1,0 +1,7 @@
+package com.visitorpattern;
+
+public interface Visitor {
+
+	void visit(CarVariable carVariable);
+
+}
