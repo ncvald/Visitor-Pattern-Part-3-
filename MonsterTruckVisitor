@@ -1,0 +1,17 @@
+package com.visitorpattern;
+
+public class MonsterTruckVisitor implements Visitor {
+    public void visit(MonsterTruckVariable monsterTruckVariable) {
+        if (monsterTruckVariable.looksLikeBadge) {
+            System.out.println("That is a badass monster truck");
+        } else {
+            System.out.println("Loser");
+        }
+    }
+
+	@Override
+	public void visit(CarVariable carVariable) {
+		// TODO Auto-generated method stub
+		
+	}
+}
