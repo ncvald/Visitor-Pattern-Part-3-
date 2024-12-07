@@ -1,0 +1,8 @@
+package com.visitorpattern;
+
+public class TruckVariable {
+    public boolean towPackage;
+    public void accept(TruckVisitor truckVisitor) {
+        truckVisitor.visit(this);
+    }
+}
