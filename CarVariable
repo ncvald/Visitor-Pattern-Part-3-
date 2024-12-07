@@ -1,0 +1,11 @@
+package com.visitorpattern;
+
+public class CarVariable {
+    public int seats;
+    public void accept(MonsterTruckVisitor monsterTruckVisitor) {
+        monsterTruckVisitor.visit(this);
+    }
+    public void accept(CarVisitor carVisitor) {
+        carVisitor.visit(this);
+    }
+}
